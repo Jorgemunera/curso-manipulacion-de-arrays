@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        const products= [
+            {tittle: 'Burger', price: 121},
+            {tittle: 'Pizza', price: 20}
+        ];
+        //vamos a iterar y a renderizar
+        const app = document.getElementById('app');
+       const list = products.map(product=>{
+            return `<li>${product.tittle} - ${product.price}</li>`
+        });
+        //la lista que se genera es un array y lo que innerHTML necesita es un string, utilizamos metodo llamdo join para que todo lo adjunte y l imprima en el html
+        app.innerHTML = list.join('');
+    </script>
+</body>
+</html>

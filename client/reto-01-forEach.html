@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO 1: My list Homechores</title>
+    <style>
+        .container-chores{
+            display: flex;
+        }
+        div{
+            width: 100px;
+            padding:20px;
+        }
+        div ul{
+            text-align: center;
+        }
+        li{
+            margin-bottom: 4px;
+        }
+        div ul li{
+            display: inline-block;
+            width: 88px;
+            list-style: none;
+        }
+        div ol li{
+            width: 150px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="container-chores">
+        <div>
+            <h1>Chores</h1>
+            <ol id="chores">
+            </ol>
+        </div>
+        <div>
+            <h1>state</h1>
+            <ul id="states">
+            </ul>
+        </div>
+    </main>  
+</body>
+
+<script src="../server/reto-01-forEach.js"></script>
+</html>
